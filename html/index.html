@@ -5,16 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agrotech</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href= "css/styles.css" />
 </head>
-
 <body>
-
-    <!-- ══════════════════════════════════
+ 
+<!-- ══════════════════════════════════
      NAVEGACIÓN
 ══════════════════════════════════ -->
-
- <nav>
+<nav>
   <button class="nav-hamburger" id="hamburger" aria-label="Menú">
     <span></span><span></span><span></span>
   </button>
@@ -29,12 +27,11 @@
     <span class="logo-text">Agrotech</span>
   </a>
 </nav>
-
-
+ 
 <!-- ══════════════════════════════════
-      (menú lateral)
+     DRAWER (menú lateral)
 ══════════════════════════════════ -->
-    <div class="drawer-overlay" id="overlay"></div>
+<div class="drawer-overlay" id="overlay"></div>
 <div class="nav-drawer" id="drawer">
   <div class="drawer-menu">
     <a href="#inicio" class="drawer-item" onclick="closeDrawer()">
@@ -52,11 +49,305 @@
       <span>Productos</span>
     </a>
     <div class="drawer-divider"></div>
+    <a href="#resenas" class="drawer-item" onclick="closeDrawer()">
+      <div class="drawer-dot"></div>
+      <span>Reseñas</span>
+    </a>
+    <div class="drawer-divider"></div>
     <a href="#contacto" class="drawer-item" onclick="closeDrawer()">
       <div class="drawer-dot"></div>
       <span>Contacto</span>
     </a>
   </div>
 </div>
-
+ 
+<!-- ══════════════════════════════════
+     INICIO (Banner principal)
+══════════════════════════════════ -->
+<section id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Agricultura del futuro</div>
+    <h1 class="hero-title">Agro<span>tech</span></h1>
+    <p class="hero-sub">Cultivamos la tierra con tecnología, pasión y compromiso con el medio ambiente para alimentar el mañana.</p>
+    <a href="#nosotros" class="hero-cta">
+      Conoce más
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    scroll
+  </div>
+</section>
+ 
+<!-- ══════════════════════════════════
+     NOSOTROS
+══════════════════════════════════ -->
+<section id="nosotros">
+  <div class="section-inner">
+    <span class="section-tag">Quiénes somos</span>
+    <h2 class="section-title">Raíces profundas,<br>visión al futuro</h2>
+    <p class="section-lead">En Agrotech combinamos el conocimiento ancestral del campo con herramientas tecnológicas de vanguardia para una agricultura más productiva y sostenible.</p>
+ 
+    <div class="nosotros-grid">
+      <div class="nosotros-visual">
+        <div class="nosotros-card-big">
+          <div class="nosotros-big-num">15+</div>
+          <div class="nosotros-big-label">Años de experiencia en el sector agrícola</div>
+        </div>
+        <div class="nosotros-stats">
+          <div class="stat-pill">
+            <div class="stat-pill-num">500+</div>
+            <div class="stat-pill-label">Hectáreas cultivadas</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-pill-num">80+</div>
+            <div class="stat-pill-label">Familias beneficiadas</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-pill-num">12</div>
+            <div class="stat-pill-label">Tipos de cultivos</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-pill-num">100%</div>
+            <div class="stat-pill-label">Compromiso sostenible</div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="nosotros-text">
+        <p style="color: var(--text-mid); line-height: 1.75; font-size: 0.97rem;">Somos una empresa mexicana dedicada al desarrollo agrícola integral. Nuestro equipo de expertos trabaja día a día para transformar el campo con prácticas responsables que cuidan la tierra y generan prosperidad.</p>
+        <div class="values">
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <p><strong>Innovación tecnológica</strong> — Sensores, riego inteligente y monitoreo satelital al servicio del productor.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <p><strong>Sustentabilidad</strong> — Prácticas amigables con el ecosistema, reduciendo el uso de agua y agroquímicos.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <p><strong>Comunidad</strong> — Apoyamos a pequeños productores con capacitación y acceso a mercados justos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════════════════════════════
+     PRODUCTOS
+══════════════════════════════════ -->
+<section id="productos">
+  <div class="section-inner">
+    <span class="section-tag">Lo que ofrecemos</span>
+    <h2 class="section-title">Nuestros productos<br>y servicios</h2>
+    <p class="section-lead">Del campo a la mesa con calidad garantizada. Cultivamos con respeto y cosechamos con orgullo.</p>
+ 
+    <div class="productos-grid">
+      <div class="producto-card">
+        <div class="producto-icon">🌽</div>
+        <h3>Cultivos de temporada</h3>
+        <p>Maíz, trigo, frijol y hortalizas producidos con técnicas de agricultura de precisión para maximizar rendimiento.</p>
+        <span class="producto-badge">Temporada 2025</span>
+      </div>
+      <div class="producto-card">
+        <div class="producto-icon">🌿</div>
+        <h3>Productos orgánicos</h3>
+        <p>Línea certificada libre de agroquímicos, cultivada con biofertilizantes y control biológico de plagas.</p>
+        <span class="producto-badge">Certificado</span>
+      </div>
+      <div class="producto-card">
+        <div class="producto-icon">💧</div>
+        <h3>Riego inteligente</h3>
+        <p>Sistemas de goteo y aspersión automatizados, reduciendo hasta un 40% el consumo de agua en campo.</p>
+        <span class="producto-badge">Tecnología</span>
+      </div>
+      <div class="producto-card">
+        <div class="producto-icon">🐄</div>
+        <h3>Ganadería sostenible</h3>
+        <p>Cría de ganado bovino y caprino con pastoreo rotacional y bienestar animal como prioridad.</p>
+        <span class="producto-badge">Sostenible</span>
+      </div>
+      <div class="producto-card">
+        <div class="producto-icon">🔬</div>
+        <h3>Análisis de suelo</h3>
+        <p>Laboratorio propio para estudios de fertilidad, pH, microbiota y planes de nutrición personalizados.</p>
+        <span class="producto-badge">Servicio</span>
+      </div>
+      <div class="producto-card">
+        <div class="producto-icon">📦</div>
+        <h3>Exportación</h3>
+        <p>Logística y empaque especializados para la exportación de productos frescos hacia mercados de EE. UU. y Canadá.</p>
+        <span class="producto-badge">Internacional</span>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════════════════════════════
+     RESEÑAS
+══════════════════════════════════ -->
+<section id="resenas">
+  <div class="section-inner">
+    <span class="section-tag">Lo que dicen de nosotros</span>
+    <h2 class="section-title">Reseñas de<br>nuestros clientes</h2>
+    <p class="section-lead">La confianza de quienes trabajan con nosotros es nuestro mayor orgullo.</p>
+ 
+    <div class="resenas-grid">
+      <div class="resena-card">
+        <div class="resena-estrellas">★★★★★</div>
+        <p class="resena-texto">Trabajar con Agrotech transformó nuestra producción. El sistema de riego inteligente redujo nuestros costos de agua en casi un 35% desde el primer ciclo.</p>
+        <div class="resena-autor">
+          <div class="resena-avatar">👨‍🌾</div>
+          <div>
+            <div class="resena-nombre">Carlos Mendoza</div>
+            <div class="resena-cargo">Productor de hortalizas, Culiacán</div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="resena-card">
+        <div class="resena-estrellas">★★★★★</div>
+        <p class="resena-texto">El análisis de suelo que nos hicieron fue detallado y muy útil. Gracias a su plan de nutrición, nuestra cosecha de maíz mejoró notablemente esta temporada.</p>
+        <div class="resena-autor">
+          <div class="resena-avatar">👩‍🌾</div>
+          <div>
+            <div class="resena-nombre">Laura Espinoza</div>
+            <div class="resena-cargo">Agricultora independiente, Guasave</div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="resena-card">
+        <div class="resena-estrellas">★★★★★</div>
+        <p class="resena-texto">Su línea de productos orgánicos certificados nos abrió puertas en mercados de exportación que antes no podíamos alcanzar. Excelente equipo y servicio.</p>
+        <div class="resena-autor">
+          <div class="resena-avatar">🧑‍💼</div>
+          <div>
+            <div class="resena-nombre">Roberto Félix</div>
+            <div class="resena-cargo">Director, Exportadora Del Valle</div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="resena-card">
+        <div class="resena-estrellas">★★★★☆</div>
+        <p class="resena-texto">La capacitación que nos dieron sobre pastoreo rotacional cambió por completo nuestra forma de manejar el ganado. Muy profesionales y comprometidos.</p>
+        <div class="resena-autor">
+          <div class="resena-avatar">🤠</div>
+          <div>
+            <div class="resena-nombre">Ernesto Valenzuela</div>
+            <div class="resena-cargo">Ganadero, El Fuerte</div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="resena-card">
+        <div class="resena-estrellas">★★★★★</div>
+        <p class="resena-texto">Desde que adoptamos sus prácticas sostenibles, nuestra comunidad ha visto mejoras reales. Agrotech no solo habla de responsabilidad, la practica.</p>
+        <div class="resena-autor">
+          <div class="resena-avatar">👩‍💼</div>
+          <div>
+            <div class="resena-nombre">María Bojórquez</div>
+            <div class="resena-cargo">Coordinadora agrícola, Mocorito</div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="resena-card">
+        <div class="resena-estrellas">★★★★★</div>
+        <p class="resena-texto">El proceso de exportación que gestionaron para nuestros productos fue impecable. Puntualidad, documentación perfecta y trato excelente en todo momento.</p>
+        <div class="resena-autor">
+          <div class="resena-avatar">👨‍💼</div>
+          <div>
+            <div class="resena-nombre">Alejandro Torres</div>
+            <div class="resena-cargo">Gerente de logística, FrescoSin</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════════════════════════════
+     CONTACTO
+══════════════════════════════════ -->
+<section id="contacto">
+  <div class="section-inner">
+    <span class="section-tag" style="color: var(--green-light);">Estamos aquí</span>
+    <h2 class="section-title">Contáctanos</h2>
+    <p class="section-lead">¿Tienes preguntas o te interesa trabajar con nosotros? Escríbenos y con gusto te atendemos.</p>
+ 
+    <div class="contacto-grid">
+      <div class="contacto-info">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Ubicación</h4>
+            <p>Sinaloa, México</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Teléfono</h4>
+            <p>+52 (668) 000-0000</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Correo</h4>
+            <p>contacto@agrotech.mx</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <h4>Horario</h4>
+            <p>Lunes a viernes, 8:00 — 17:00 hrs</p>
+          </div>
+        </div>
+      </div>
+ 
+      <form class="contacto-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-field">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombre" />
+          </div>
+          <div class="form-field">
+            <label>Correo</label>
+            <input type="email" placeholder="tu@correo.com" />
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Asunto</label>
+          <input type="text" placeholder="¿En qué te podemos ayudar?" />
+        </div>
+        <div class="form-field">
+          <label>Mensaje</label>
+          <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Enviar mensaje →</button>
+      </form>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════════════════════════════
+     FOOTER
+══════════════════════════════════ -->
+<footer>
+  <p>© 2025 <span>Agrotech</span>. Todos los derechos reservados. · Sinaloa, México</p>
+</footer>
+ 
+<script src="js/main.js"></script>
 </body>
+</html>
